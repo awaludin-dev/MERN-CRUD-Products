@@ -1,0 +1,33 @@
+GET http://127.0.0.1:3001/api/product
+
+###
+
+GET http://127.0.0.1:3001/api/product/61de2af091d86c2d490d952e
+
+###
+
+POST http://127.0.0.1:3001/api/product
+Content-Type: application/json
+
+{
+    "name": "Laptop MSI",
+    "price": 18000000,
+    "stock": 5,
+    "status": true
+}
+
+###
+
+DELETE http://127.0.0.1:3001/api/product/61e242eb0387188701f52593
+
+###
+
+PATCH http://127.0.0.1:3001/api/product/61e24961096ed35f5f6579f0
+Content-Type: application/json
+
+{
+    "name": "Laptop Acer",
+    "price": 12000000,
+    "stock": 0,
+    "status": false
+}
